@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Detector from './components/Detector/Detector';
 import Title from './components/Title';
 import Text2 from './components/Text2';
@@ -7,6 +7,10 @@ import Logo from './Logo.png';
 import { Button } from 'react-bootstrap';
 
 function App() {
+  const [getStart,setStart] = useState(false)
+  const startClick = () => {
+    setStart(true)
+  }
   return (
     <div className="App">
       <div id="top-space"/>
@@ -17,12 +21,14 @@ function App() {
         <Title/>
       </div>
       <div>
-        <Button className="start-button">START...</Button>
+        { !getStart &&  <Button onClick={startClick} className="start-button" >START...</Button>}
       </div>
       <div>
         <Text2/>
       </div>
- 
+      <div>
+        {getStart && <Detector/>}
+      </div>
 
     </div>
   );
