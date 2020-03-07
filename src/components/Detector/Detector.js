@@ -18,7 +18,7 @@ const Detector = () => {
         if(getImage) {
             const data = new FormData()
             data.append("image", getFile)
-            fetch("http://localhost:5000/api/detect", {
+            fetch("/api/detect", {
                 method: 'POST',
                 body: data
             })
