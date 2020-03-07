@@ -13,6 +13,7 @@ function App() {
   }
   return (
     <div className="App">
+      { getStart && <Detector/>}
       <div id="top-space"/>
       <div id="logo">
         <img src={Logo} width="150" height="50" alt="growing healthy plant"  />
@@ -27,7 +28,7 @@ function App() {
         <Text2/>
       </div>
       <div>
-        {getStart && <Detector/>}
+        
       </div>
 
     </div>
