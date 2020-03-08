@@ -5,7 +5,7 @@ const Text2 = props => {
         <div className="Text2">
             <p id="text-2">Built with TensorFlow + Flask + React.
             Learn more about   <br/>
-            <a class="about" target="_blank" href="https://ieeexplore.ieee.org/document/8473322"> how it works.</a>
+            <a className="about" target="_blank" href="https://ieeexplore.ieee.org/document/8473322"> how it works.</a>
             </p>
         </div>
 

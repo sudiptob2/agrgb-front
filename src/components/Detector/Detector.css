@@ -1,0 +1,8 @@
+.Result{
+    margin: 15px;
+    text-align: center;
+    font-family: Poppins, Arial, sans-serif;
+    -webkit-text-size-adjust:100%;
+    -moz-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+}

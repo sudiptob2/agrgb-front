@@ -1,6 +1,7 @@
 body, html {
   width: 100%;
-  height: 200%;
+  height: 100%;
+
 }
 body {
   position: fixed;
@@ -47,7 +48,6 @@ p {
 }
 .Title {
   width: 650px;
-  height: 130px;
 
   position: relative; /*it can be fixed too*/
   left:0; right:0;
@@ -62,19 +62,20 @@ p {
 
 }
 #top-space {
-  margin-top: 150px
+  margin-top: 200px
 }
 
 #detector {
   position: relative;
 }
 #logo {
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 .start-button {
 
   position: relative;
   cursor: pointer;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5px;
@@ -118,5 +119,21 @@ p {
 #text-2 {
   font-size: small;
   text-align: center;
+}
+
+.Text1 {
+  width: 550px;
+  height: 80px;
+  margin: 0;
+  position: relative; /*it can be fixed too*/
+  left:0; right:0;
+  top:0; bottom:0;
+  margin: auto;
+
+  /*this to solve "the content will not be cut when the window is smaller than the content": */
+  max-width:100%;
+  max-height:100%;
+  overflow:auto;
+
 }
 
