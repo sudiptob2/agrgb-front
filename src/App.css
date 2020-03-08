@@ -69,6 +69,7 @@ p {
   position: relative;
 }
 #logo {
+  margin-top: 15px;
   margin-bottom: 2px;
 }
 .start-button {

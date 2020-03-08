@@ -51,13 +51,16 @@ const Detector = () => {
             <div className="Detector">
                 <div className="Upload">
                     <img id="upload-icon" src={getImage} alt="Smiley face" height="512" width="512"/>
+
+                </div>
+                <div>
                     <div className="Result">
-                        {getResult}
-                    </div>
-                    <div className="Button">   
-                        <input onChange={ e => upload(e)} type="file"/>
-                        <button onClick={ e => detect()} type="button">Detect</button>
-                    </div>
+                            {getResult}
+                        </div>
+                        <div className="Button">   
+                            <input onChange={ e => upload(e)} type="file"/>
+                            <button onClick={ e => detect()} type="button">Detect</button>
+                        </div>
                 </div>
             </div>
         </>
