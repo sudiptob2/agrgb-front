@@ -31,7 +31,7 @@ const Detector = () => {
         if(getImage) {
             const data = new FormData()
             data.append("image", getFile)
-            fetch("/api/detect", {
+            fetch("https://agrgb-rest.herokuapp.com/api/detect", {
                 method: 'POST',
                 body: data
             })
