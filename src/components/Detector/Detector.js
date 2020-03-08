@@ -1,11 +1,24 @@
 import React, { useState } from 'react';
+import Logo from '../../Logo.png';
+import UploadIcon from '../../upload-icon.png';
+import Title from '../Title';
+import './Detector.css'
 
 const Detector = () => {
-    const defaultImage = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    const defaultImage = UploadIcon
     const [getFile, setFile] = useState(null);
     const [getImage, setImage] = useState(defaultImage);
-    const [result, setResult] = useState("");
+    const [getResult, setResult] = useState("Please upload an Image");
 
+    const createResult = (result) => {
+        if(result)
+        {
+            console.log(result);
+            return "Detected Disease: "+result.disease
+        }
+        return "Please upload an Image";
+
+    }
 
     const upload = (e) => {
         console.log("Upload")
@@ -23,26 +36,34 @@ const Detector = () => {
                 body: data
             })
             .then( r => r.json())
-            .then( r => setResult(JSON.stringify(r)))
+            .then( r => setResult(createResult(r)))
         }
     }
 
     return(
-        <div className="Detector">
-            <div className="Upload">
-                <img style={{ border: 2}} src={getImage} alt="Smiley face" height="512" width="512"/>
-                <div className="Button">   
-                    <input onChange={ e => upload(e)} type="file"/>
-                    <button onClick={ e => detect()} type="button">Detect</button>
-                </div>
+        <> 
+            <div id="logo">
+                <img src={Logo} width="150" height="50" alt="growing healthy plant"  />
             </div>
-            <div className="Result">
-                Result
+            <div>
+                <Title/>
+            </div>
+            <div className="Detector">
+                <div className="Upload">
+                    <img id="upload-icon" src={getImage} alt="Smiley face" height="512" width="512"/>
+
+                </div>
                 <div>
-                    {result}
+                    <div className="Result">
+                            {getResult}
+                        </div>
+                        <div className="Button">   
+                            <input onChange={ e => upload(e)} type="file"/>
+                            <button onClick={ e => detect()} type="button">Detect</button>
+                        </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
