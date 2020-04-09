@@ -1,0 +1,103 @@
+a {
+    color: rgb(118, 198, 83);
+}
+#footer-main-container {
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    margin: 0;
+    color: white;
+    background-color: #f2f3f4;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.copyright {
+    font-family: "Josefin Sans", sans-serif;
+    margin: 5px;
+    font-weight: bold;
+    color: rgb(194, 194, 194);
+}
+.social {
+    margin: 5px;
+    color: rgb(194, 194, 194);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .copyright {
+        font-family: "Josefin Sans", sans-serif;
+        margin: 5px;
+        font-weight: bold;
+        color: rgb(194, 194, 194);
+        font-size: x-small;
+    }
+    .social {
+        margin: 5px;
+        color: rgb(194, 194, 194);
+        font-size: x-small;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .copyright {
+        font-family: "Josefin Sans", sans-serif;
+        margin: 5px;
+        font-weight: bold;
+        color: rgb(194, 194, 194);
+        font-size: small;
+    }
+    .social {
+        margin: 5px;
+        color: rgb(194, 194, 194);
+        font-size: small;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .copyright {
+        font-family: "Josefin Sans", sans-serif;
+        margin: 5px;
+        font-weight: bold;
+        color: rgb(194, 194, 194);
+        font-size: smaller;
+    }
+    .social {
+        margin: 5px;
+        color: rgb(194, 194, 194);
+        font-size: smaller;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .copyright {
+        font-family: "Josefin Sans", sans-serif;
+        margin: 5px;
+        font-weight: bold;
+        color: rgb(194, 194, 194);
+        font-size: medium;
+    }
+    .social {
+        margin: 5px;
+        color: rgb(194, 194, 194);
+        font-size: medium;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .copyright {
+        font-family: "Josefin Sans", sans-serif;
+        margin: 5px;
+        color: rgb(194, 194, 194);
+        font-size: medium;
+    }
+    .social {
+        margin: 5px;
+        color: rgb(194, 194, 194);
+        font-size: medium;
+    }
+}
