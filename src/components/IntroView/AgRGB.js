@@ -4,7 +4,7 @@ import "./AgRGB.css";
 
 const AgRGB = (props) => {
     return (
-        <div ClassName="center">
+        <div className="center">
             <img className="rgb-title" src={RgbTitle} alt="AGRGB" />
         </div>
     );

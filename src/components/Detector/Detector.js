@@ -7,7 +7,7 @@ import "./Detector.css";
 const Detector = () => {
     const defaultImage = UploadIcon;
     const [getFile, setFile] = useState(null);
-    const [getImage, setImage] = useState(defaultImage);
+    const [getImage, setImage] = useState(null);
     const [getResult, setResult] = useState("Please upload an Image");
 
     const createResult = (result) => {
@@ -26,6 +26,7 @@ const Detector = () => {
         console.log("Upload");
         setFile(e.target.files[0]);
         setImage(URL.createObjectURL(e.target.files[0]));
+        console.log(getImage);
     };
 
     const detect = () => {
@@ -45,26 +46,17 @@ const Detector = () => {
 
     return (
         <>
-            <div id="logo">
-                <img
-                    src={Logo}
-                    width="150"
-                    height="50"
-                    alt="growing healthy plant"
-                />
-            </div>
-            <div>
-                <AgRGB />
-            </div>
             <div className="Detector">
-                <div className="Upload">
-                    <img
-                        id="upload-icon"
-                        src={getImage}
-                        alt="Smiley face"
-                        height="512"
-                        width="512"
-                    />
+                <div className="upload center">
+                    <div className="image-container">
+                        <img
+                            id="upload-icon"
+                            src={getImage}
+                            alt="Smiley face"
+                            height="128"
+                            width="128"
+                        />
+                    </div>
                 </div>
                 <div>
                     <div className="Result">{getResult}</div>

@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState } from "react";
-import Detector from "./components/Detector/Detector";
+import Detector from "./components/Detector/Detector2";
 import AgRGB from "./components/IntroView/AgRGB";
 import Text2 from "./components/IntroView/Text2";
 import Text1 from "./components/IntroView/Text1";

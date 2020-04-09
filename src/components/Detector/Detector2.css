@@ -1,0 +1,9 @@
+.crop-container,
+.croper {
+    border: 2px solid;
+    width: 400px;
+    height: 300px;
+}
+.controles {
+    height: 50px;
+}
