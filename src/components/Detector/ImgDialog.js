@@ -11,6 +11,8 @@ import Slide from "@material-ui/core/Slide";
 const styles = {
     appBar: {
         position: "relative",
+        background: "#7ed957",
+        fontFamily: "Josefin Sans, sans-serif",
     },
     flex: {
         flex: 1,
@@ -18,7 +20,7 @@ const styles = {
     imgContainer: {
         position: "relative",
         flex: 1,
-        padding: 16,
+        padding: 30,
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -26,6 +28,17 @@ const styles = {
     img: {
         maxWidth: "100%",
         maxHeight: "100%",
+    },
+    result: {
+        fontFamily: "Josefin Sans, sans-serif",
+        color: "#5abf2f",
+        fontSize: "medium",
+        position: "relative",
+        flex: 1,
+        margin: 10,
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
     },
 };
 
@@ -50,7 +63,7 @@ class ImgDialog extends React.Component {
         const { classes } = this.props;
         return (
             <Dialog
-                fullScreen
+                maxWidth="md"
                 open={!!this.props.img}
                 onClose={this.props.onClose}
                 TransitionComponent={Transition}
@@ -58,21 +71,22 @@ class ImgDialog extends React.Component {
                 <AppBar className={classes.appBar}>
                     <Toolbar>
                         <IconButton
-                            color="inherit"
+                            color="default"
                             onClick={this.props.onClose}
                             aria-label="Close"
                         >
                             <CloseIcon />
                         </IconButton>
                         <Typography
-                            variant="title"
-                            color="inherit"
+                            variant="h2"
+                            color="secondary"
                             className={classes.flex}
                         >
-                            <p>Cropped image</p>
+                            <p>Detection Result </p>
                         </Typography>
                     </Toolbar>
                 </AppBar>
+                <p className={classes.result}>{this.props.result} Detected!</p>
                 <div className={classes.imgContainer}>
                     <img
                         src={this.props.img}

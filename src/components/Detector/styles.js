@@ -1,4 +1,8 @@
 export const styles = (theme) => ({
+    palette: {
+        primary: "#7ed957",
+        secondary: "#58d8bf",
+    },
     cropContainer: {
         position: "relative",
         width: "100%",

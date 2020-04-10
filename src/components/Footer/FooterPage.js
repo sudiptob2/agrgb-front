@@ -11,13 +11,25 @@ const FooterPage = () => {
                 <div className="social">
                     Contact Us
                     <div className="socialLinks">
-                        <a href="#" className="face">
+                        <a
+                            href="https://fb.com/sudiptob2"
+                            target="_blank"
+                            className="face"
+                        >
                             facebook |{" "}
                         </a>
-                        <a href="#" className="tweet">
-                            twitter |{" "}
+                        <a
+                            href="https://github.com/sudiptob2"
+                            target="_blank"
+                            className="GitHub"
+                        >
+                            GitHub |{" "}
                         </a>
-                        <a href="#" className="linked">
+                        <a
+                            href="https://www.linkedin.com/in/sudiptob2/"
+                            target="_blank"
+                            className="linked"
+                        >
                             LinkedIn{" "}
                         </a>
                     </div>
