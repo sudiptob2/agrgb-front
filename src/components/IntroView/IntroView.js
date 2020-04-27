@@ -10,21 +10,19 @@ import { Link } from "react-router-dom";
 
 function IntroView() {
     return (
-        <div className="App">
-            <>
-                <div className="top-space" />
-                <AnimatedTree />
-                <AgRGB />
-                <Text1 />
-                <Link to="/detector">
-                    <Button className="start-button start-button-size">
-                        START...
-                    </Button>
-                </Link>
-                <Text2 />
-                <VideoPlayer />
-            </>
-        </div>
+        <>
+            <div className="top-space" />
+            <AnimatedTree />
+            <AgRGB />
+            <Text1 />
+            <Link to="/detector">
+                <Button className="start-button start-button-size">
+                    START...
+                </Button>
+            </Link>
+            <Text2 />
+            <VideoPlayer />
+        </>
     );
 }
 

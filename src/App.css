@@ -34,11 +34,19 @@ p {
 }
 
 .App {
-    text-align: center;
-    font-family: Poppins, Arial, sans-serif;
-    -webkit-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.content-wrap {
+    padding-bottom: 4rem;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
 }
 
 #logo {
@@ -78,14 +86,11 @@ p {
 }
 
 .top-space {
-    margin-top: 70px;
+    margin-top: 15vh;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .top-space {
-        margin-top: 150px;
-    }
     .start-button-size {
         font-size: 15px;
         width: 100px;
@@ -95,9 +100,6 @@ p {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .top-space {
-        margin-top: 130px;
-    }
     .start-button-size {
         font-size: 17px;
         width: 110px;
@@ -107,9 +109,6 @@ p {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .top-space {
-        margin-top: 110px;
-    }
     .start-button-size {
         font-size: 18px;
         width: 120px;

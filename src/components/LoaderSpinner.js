@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Loader from "react-loader-spinner";
 import { usePromiseTracker } from "react-promise-tracker";
 
@@ -9,11 +9,11 @@ const LoaderSpinner = (props) => {
         <div>
             {promiseInProgress === true ? (
                 <Loader
-                    type="Audio"
+                    type="Puff"
                     color="#5abf2f"
-                    height={150}
-                    width={150}
-                    timeout={1000} //3 secs
+                    height={100}
+                    width={100}
+                    timeout={3000} //3 secs
                 />
             ) : null}
         </div>

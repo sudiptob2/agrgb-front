@@ -86,6 +86,7 @@ const Detector = ({ classes }) => {
 
     const onClose = useCallback(() => {
         setCroppedImage(null);
+        setHasResult(false);
     }, []);
 
     return (
@@ -164,7 +165,7 @@ const Detector = ({ classes }) => {
             {console.log("get result: ", getResultString)}
             {console.log("hasResult ", hasResult)}
             {console.log("Loder trac", isLoading)}
-            <LoaderSpinner />
+            {!hasResult && <LoaderSpinner />}
             {hasResult && (
                 <ImgDialog
                     img={croppedImage}
