@@ -13,7 +13,7 @@ const LoaderSpinner = (props) => {
                     color="#5abf2f"
                     height={150}
                     width={150}
-                    timeout={3000} //3 secs
+                    timeout={1000} //3 secs
                 />
             ) : null}
         </div>

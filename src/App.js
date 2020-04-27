@@ -1,13 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState } from "react";
 import Detector from "./components/Detector/Detector";
-import AgRGB from "./components/IntroView/AgRGB";
-import Text2 from "./components/IntroView/Text2";
-import Text1 from "./components/IntroView/Text1";
-import AnimatedTree from "./components/IntroView/AnimatedTree";
 import FooterPage from "./components/Footer/FooterPage";
+import IntroView from "./components/IntroView/IntroView";
 import "./App.css";
-import { Button } from "react-bootstrap";
+import { Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function App() {
     const [getStart, setStart] = useState(false);
@@ -16,22 +14,8 @@ function App() {
     };
     return (
         <div className="App">
-            {getStart && <Detector />}
-            {!getStart && (
-                <>
-                    <div className="top-space" />
-                    <AnimatedTree />
-                    <AgRGB />
-                    <Text1 />
-                    <Button
-                        onClick={startClick}
-                        className="start-button start-button-size"
-                    >
-                        START...
-                    </Button>
-                    <Text2 />
-                </>
-            )}
+            <Route path="/" exact component={IntroView} />
+            <Route path="/detector" component={Detector} />
             <FooterPage />
         </div>
     );
