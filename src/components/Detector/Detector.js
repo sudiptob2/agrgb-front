@@ -107,7 +107,7 @@ const Detector = ({ classes }) => {
             <div className={classes.controls}>
                 <div className={classes.sliderContainer}>
                     <Typography
-                        style={{ margin: 30, color: "green" }}
+                        style={{ margin: 25, color: "green" }}
                         variant="overline"
                         classes={{ root: classes.sliderLabel }}
                     >
@@ -124,11 +124,13 @@ const Detector = ({ classes }) => {
                 </div>
                 <div className={classes.sliderContainer}>
                     <Typography
-                        style={{ margin: 30, fontSize: 12 }}
+                        style={{ margin: 24, fontSize: 12 }}
                         variant="overline"
                         classes={{ root: classes.sliderLabel }}
                     >
-                        <p style={{ fontSize: 12 }}>ROTATION</p>
+                        <p style={{ fontSize: 12, paddingRight: "3px" }}>
+                            ROTATE
+                        </p>
                     </Typography>
                     <Slider
                         style={{ margin: "10px" }}

@@ -4,7 +4,7 @@ import AgRGB from "./AgRGB";
 import Text2 from "./Text2";
 import Text1 from "./Text1";
 import AnimatedTree from "./AnimatedTree";
-import VideoPlayer from "./VideoPlayer";
+import YoutubeWatchModal from "../ModalView/YoutubeWatchModal";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -21,7 +21,8 @@ function IntroView() {
                 </Button>
             </Link>
             <Text2 />
-            <VideoPlayer />
+            {/* <VideoPlayer /> */}
+            <YoutubeWatchModal />
         </>
     );
 }

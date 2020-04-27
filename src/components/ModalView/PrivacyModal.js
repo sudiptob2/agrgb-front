@@ -36,6 +36,7 @@ const PrivacyModal = (props) => {
             </button>
             <Modal open={open} onClose={() => setOpen(false)} center>
                 <h2>Privacy Policy</h2>
+
                 {policyText}
             </Modal>
         </>

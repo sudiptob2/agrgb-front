@@ -88,7 +88,6 @@ p {
 .top-space {
     margin-top: 15vh;
 }
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .start-button-size {
