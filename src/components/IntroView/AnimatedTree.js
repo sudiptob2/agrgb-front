@@ -1,5 +1,5 @@
 import React from "react";
-import Tree from "./tree_animation.gif";
+import Tree from "../../assets/images/tree_animation.gif";
 import "./AnimatedTree.css";
 
 const AnimatedTree = () => {

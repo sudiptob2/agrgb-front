@@ -10,7 +10,7 @@ import getCroppedImg from "./CropImage";
 import { styles } from "./styles";
 
 import { trackPromise } from "react-promise-tracker";
-import LoaderSpinner from "../LoaderSpinner";
+import LoaderSpinner from "../Loader/LoaderSpinner";
 
 const Detector = ({ classes }) => {
     const [getImage, setImage] = useState(null);

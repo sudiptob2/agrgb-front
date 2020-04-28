@@ -1,5 +1,5 @@
 import React from "react";
-import RgbTitle from "./AgRGB.png";
+import RgbTitle from "../../assets/images/AgRGB.png";
 import "./AgRGB.css";
 
 const AgRGB = (props) => {
