@@ -1,0 +1,103 @@
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .text1 {
+        font-family: "Josefin Sans", sans-serif;
+        width: 400px;
+        font-size: 12px;
+        margin: 1px;
+        line-height: 1.5em;
+    }
+    .text2 {
+        font-family: "Josefin Sans", sans-serif;
+        width: 250px;
+        font-size: 11px;
+        margin: 5px;
+        text-align: center;
+        line-height: 1.5em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .text1 {
+        font-family: "Josefin Sans", sans-serif;
+        width: 400px;
+        font-size: 13px;
+        margin: 2px;
+        line-height: 1.5em;
+    }
+    .text2 {
+        font-family: "Josefin Sans", sans-serif;
+        width: 300px;
+        font-size: 12px;
+        margin: 7px;
+        text-align: center;
+        line-height: 1.5em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .text1 {
+        font-family: "Josefin Sans", sans-serif;
+        width: 450px;
+        font-size: 15px;
+        margin: 4px;
+        line-height: 1.5em;
+    }
+    .text2 {
+        font-family: "Josefin Sans", sans-serif;
+        width: 300px;
+        font-size: 13px;
+        margin: 7px;
+        text-align: center;
+        line-height: 1.5em;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .text1 {
+        font-family: "Josefin Sans", sans-serif;
+        width: 500px;
+        font-size: 16px;
+        margin: 6px;
+        line-height: 1.5em;
+        text-align: center;
+    }
+    .text2 {
+        font-family: "Josefin Sans", sans-serif;
+        width: 400px;
+        font-size: 15px;
+        margin: 10px;
+        text-align: center;
+        line-height: 1.5em;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .title-text {
+        font-size: 40px;
+    }
+    .text1 {
+        width: 600px;
+        font-size: 20px;
+        margin: 8px;
+        line-height: 1.5em;
+    }
+    .text2 {
+        font-family: "Josefin Sans", sans-serif;
+        width: 400px;
+        font-size: 16px;
+        margin: 10px;
+        text-align: center;
+        line-height: 1.5em;
+    }
+}

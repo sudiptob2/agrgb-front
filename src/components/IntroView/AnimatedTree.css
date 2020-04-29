@@ -1,0 +1,43 @@
+.tree-size {
+    width: 400px;
+    height: 140px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .tree-size {
+        width: 390px;
+        height: 147px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .tree-size {
+        width: 410px;
+        height: 155px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .tree-size {
+        width: 420px;
+        height: 155px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .tree-size {
+        width: 450px;
+        height: 170px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .tree-size {
+        width: 470px;
+        height: 180px;
+    }
+}

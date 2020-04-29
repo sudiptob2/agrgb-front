@@ -1,0 +1,98 @@
+.customModal {
+    background: rgb(238, 237, 237);
+    max-width: 550px;
+    min-width: 320px;
+    width: 100%;
+}
+.play-btn {
+    color: green;
+    border: none;
+    background-color: inherit;
+    padding: 0px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+.play-btn:hover {
+    text-decoration: none;
+    color: rgb(231, 19, 19);
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .play-btn {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 11px;
+        text-align: center;
+    }
+    .customModal {
+        max-width: 320px;
+    }
+    .responsive-iframe {
+        width: 280px;
+        height: 140px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .play-btn {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 12px;
+        text-align: center;
+    }
+    .customModal {
+        max-width: 410px;
+    }
+    .responsive-iframe {
+        width: 358px;
+        height: 205px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .play-btn {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 13px;
+        text-align: center;
+    }
+    .customModal {
+        max-width: 530px;
+    }
+    .responsive-iframe {
+        width: 480px;
+        height: 270px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .play-btn {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 15px;
+        text-align: center;
+    }
+    .customModal {
+        max-width: 690px;
+    }
+    .responsive-iframe {
+        width: 640px;
+        height: 360px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .play-btn {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 16px;
+        text-align: center;
+    }
+    .customModal {
+        max-width: 850px;
+    }
+    .responsive-iframe {
+        width: 800px;
+        height: 450px;
+    }
+}

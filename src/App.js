@@ -1,48 +1,21 @@
-import React, {useState} from 'react';
-import Detector from './components/Detector/Detector';
-import Title from './components/Title';
-import Text2 from './components/Text2';
-import Text1 from './components/Text1';
-import './App.css'
-import Logo from './Logo.png';
-import { Button } from 'react-bootstrap';
+import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
+import Detector from "./components/Detector/Detector";
+import FooterPage from "./components/Footer/FooterPage";
+import IntroView from "./components/IntroView/IntroView";
+import "./App.css";
+import { Route } from "react-router-dom";
 
 function App() {
-  const [getStart,setStart] = useState(false)
-  const startClick = () => {
-    setStart(true)
-  }
-  return (
-    <div className="App">
-      <>{ getStart && <Detector/>}</>
-      
-      { !getStart &&
-      <>
-        <div id="top-space"/>
-        <div id="logo">
-          <img src={Logo} width="150" height="50" alt="growing healthy plant"  />
+    return (
+        <div className="App">
+            <div className="content-wrap">
+                <Route path="/" exact component={IntroView} />
+                <Route path="/detector" component={Detector} />
+            </div>
+            <FooterPage />
         </div>
-        <div>
-          <Title/>
-        </div>
-        <div>
-          <Text1/>
-        </div>
-        <div>
-        <Button onClick={startClick} className="start-button" >START...</Button>
-        </div>
-        <div>
-          <Text2/>
-        </div>
-        <div>
-          
-        </div> 
-      </>
-      }
-  
-    </div>
-
-  );
+    );
 }
 
 export default App;
